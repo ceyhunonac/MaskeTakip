@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 namespace Entities.Concrete
 
 {
-    //ctrlk ctrld == kod düzeltme
-    public class Person   //internal                       
+    
+    public class Person                   
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
