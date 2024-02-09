@@ -12,11 +12,11 @@ namespace Business.Concrete
     {
         private IApplicantService _applicantService;
 
-        public PttManager(IApplicantService applicantService) //Constructor new yapıldığında çalışır.
+        public PttManager(IApplicantService applicantService) 
         {
-            _applicantService = applicantService; //classlarda fieldlar alt çizgi ile başlar
+            _applicantService = applicantService; 
         }
-        public void GiveMask(Person person) //İş sınıflarında newlemek o classa bağımlılık demektir.
+        public void GiveMask(Person person) 
         {
             if (_applicantService.CheckPerson(person)){
                 Console.WriteLine(person.FirstName + " için maske verildi.");

@@ -10,17 +10,14 @@ namespace Business.Concrete
 {
     public class ForeignerManager : IApplicantService
     {
-        //SonarQube : Yazılım kalite kontrol uygulaması
         public void ApplyForMask(Person person)
         {
             throw new NotImplementedException();
         }
-
         public bool CheckPerson(Person person)
         {
             throw new NotImplementedException();
         }
-
         public List<Person> GetList()
         {
             throw new NotImplementedException();

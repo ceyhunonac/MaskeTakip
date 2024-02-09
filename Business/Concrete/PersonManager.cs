@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace Business.Concrete
 {
     //Bazen servis olarakta yazılır
-    public class PersonManager : IApplicantService  //iş sınıfı
+    public class PersonManager : IApplicantService  
     {
         public void ApplyForMask(Person person)
         {
@@ -23,7 +23,8 @@ namespace Business.Concrete
 
         public bool CheckPerson(Person person)
         {
-            KPSPublicSoapClient client = new KPSPublicSoapClient(KPSPublicSoapClient.EndpointConfiguration.KPSPublicSoap);
+            KPSPublicSoapClient client = new KPSPublicSoapClient(KPSPublicSoapClient.
+                EndpointConfiguration.KPSPublicSoap);
 
             return client.TCKimlikNoDogrulaAsync(new TCKimlikNoDogrulaRequest
                 (new TCKimlikNoDogrulaRequestBody
