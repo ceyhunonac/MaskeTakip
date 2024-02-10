@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Business.Concrete
 {
-    //Bazen servis olarakta yazılır
+   
     public class PersonManager : IApplicantService  
     {
         public void ApplyForMask(Person person)
